@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+html_letters/
 # C extensions
 *.so
 
@@ -31,6 +32,19 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+
+# Environments
+env
+env3
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
 
 # Installer logs
 pip-log.txt
