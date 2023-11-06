@@ -1,0 +1,9 @@
+pandas
+pymupdf #module to perform utility functions for the pdfs
+emoji #module that provides functions to deal with thes emojis
+nltk #Python package that you can use for NLP
+FrenchLefffLemmatizer #Python package that you can use for word lemmatize in french
+spacy #Python package that you can use for NLP
+wordcloud
+flair
+unidecode
