@@ -3,7 +3,7 @@ Text extraction methods for text, pdf and markdown files for NLP Toolbox
 
 Authors:
     Shreshta Shaurya, Machine Learning Engineer Intern at Hi! PARIS
-    Laurène DAVID, Machine Learning Enginner @ Hi! PARIS
+    Laurène DAVID, Machine Learning Enginner at Hi! PARIS
 
 """
 
@@ -55,7 +55,7 @@ class TextExtraction:
             try:
                 with open(file) as f:
                     lines = f.read()
-                    list_text.append([lines])
+                    list_text.append(lines)
             except:
                 list_text.append('NaN')
 
@@ -97,7 +97,7 @@ class TextExtraction:
                             text = unidecode(text)
 
                         whole_text = " ".join([whole_text, text])
-                list_text.append([whole_text])
+                list_text.append(whole_text)
             except:
                 list_text.append('NaN')
 
@@ -128,14 +128,14 @@ class TextExtraction:
                 with open(file,'r') as md:
                     file_split = [line for line in md]
                     file_split = " ".join(file_split)
-                list_text.append([file_split])
+                list_text.append(file_split)
             except:
                 list_text.append('NaN')
         
         return list_text
     
     
-    def extract_multiple(self, extensions):
+    def extract_multiple(self, extensions, combine_docs=False):
         '''
         Extract text from different types of files (.txt, .pdf and/or .md)
 
@@ -167,4 +167,4 @@ print("PDF:",extraction.extract_pdf())
 print("\n")
 print("MARKDOWN:",extraction.extract_md())
 
-#print(extraction.files_)
+print(extraction.files_)

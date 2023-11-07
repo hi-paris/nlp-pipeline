@@ -7,3 +7,5 @@ spacy #Python package that you can use for NLP
 wordcloud
 flair
 unidecode
+transformers
+gensim
